@@ -137,7 +137,7 @@ const getStats = async () => {
             }
         }
     ]);
-    return stats;
+    return stats[0];
 };
 
 export { createSong, updateSong, getSongs, deleteSong, getStats };

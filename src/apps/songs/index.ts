@@ -1,4 +1,4 @@
-import * as TestController from './Song.Cr.controller';
-import TestRoute from './Demo.router';
+import * as SongController from './song.controller';
+import * as SongRoute from './song.router';
 
-export { TestController, TestRoute };
+export { SongController, SongRoute };
