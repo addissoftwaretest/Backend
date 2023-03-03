@@ -9,10 +9,11 @@
         "paths": {
             "@core/*": ["./src/core/*"],
             "@helpers/*":["./src/helpers/*"],
-            "@routes":["./src/routes/index.ts"],
-            "@routes/*":["./src/routes/*"],
+            "@apps":["./src/apps/index.ts"],
+            "@apps/*":["./src/apps/*"],
             "@test/*":["./src/tests/*"],
             "@config":["./src/config.ts"],
+            "@database":["./src/database.ts"],
             "@app":["./src/app.ts"],
             "@server":["./src/server.ts"],
         },

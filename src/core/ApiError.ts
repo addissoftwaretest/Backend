@@ -24,7 +24,10 @@ export enum ErrorType {
 }
 
 export abstract class ApiError extends Error {
-    constructor(public type: ErrorType, public message: string = 'error') {
+    constructor(
+        public type: ErrorType,
+        public message: string | any = 'error'
+    ) {
         super(type);
     }
     public static handle(err: ApiError, res: Response): Response {

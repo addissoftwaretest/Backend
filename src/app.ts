@@ -10,7 +10,8 @@ import {
     InternalError,
     ErrorType
 } from '@core/ApiError';
-import routes from '@routes';
+import routes from '@apps/index';
+import '@database';
 
 const app = express();
 app.use(express.json({ limit: '10mb' }));
