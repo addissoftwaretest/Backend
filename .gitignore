@@ -29,7 +29,7 @@ coverage
 keys/*
 !keys/*.md
 !keys/*.example
-
+data
 #temp
 temp
 .DS_Store

@@ -2,8 +2,12 @@ import mongoose from 'mongoose';
 import Logger from '@core/Logger';
 import { db } from '@config';
 
-const dbURI = 'mongodb://127.0.0.1:27017/songs';
+const dbURI =
+    process.env.NODE_ENV === 'test'
+        ? 'mongodb://127.0.0.1:27017/song'
+        : 'mongodb://mongo:27017/song';
 
+console.log(process.env);
 const options = {
     autoIndex: true,
     minPoolSize: db.minPoolSize, // Maintain up to x socket connections

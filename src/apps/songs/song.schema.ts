@@ -9,6 +9,6 @@ export default {
         genre: Joi.string().required()
     }),
     songId: Joi.object().keys({
-        id: JoiObjectId().required().required()
+        id: JoiObjectId().required()
     })
 };
